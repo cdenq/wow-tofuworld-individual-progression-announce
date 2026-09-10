@@ -60,7 +60,7 @@ public:
         if (style >= IP_ANNOUNCE_NEXT && nextGate)
             msg += Acore::StringFormat(" - next: |cffcccccc{}|r", nextGate);
 
-        ChatHandler(player->GetSession()).SendSysMessage("{}", msg);
+        ChatHandler(player->GetSession()).SendSysMessage(msg);
     }
 };
 
