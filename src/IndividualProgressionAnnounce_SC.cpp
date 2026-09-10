@@ -54,11 +54,11 @@ public:
             nextGate = entry.nextGate;
         }
 
-        msg += Acore::StringFormatFmt("level {}", prog);
+        msg += Acore::StringFormat("level {}", prog);
         if (style >= IP_ANNOUNCE_NAMED && stateName)
-            msg += Acore::StringFormatFmt(" (|cffcccccc{}|r)", stateName);
+            msg += Acore::StringFormat(" (|cffcccccc{}|r)", stateName);
         if (style >= IP_ANNOUNCE_NEXT && nextGate)
-            msg += Acore::StringFormatFmt(" - next: |cffcccccc{}|r", nextGate);
+            msg += Acore::StringFormat(" - next: |cffcccccc{}|r", nextGate);
 
         ChatHandler(player->GetSession()).SendSysMessage("{}", msg);
     }
