@@ -1,0 +1,17 @@
+[worldserver]
+
+###################################################################################################
+# mod-individual-progression-announce configuration
+###################################################################################################
+#
+# Per-player progression line at login (companion to mod-individual-progression).
+# Requires: mod-individual-progression present and IndividualProgression.Enable = 1.
+#
+#    IndividualProgression.AnnounceStyle
+#        Description: What the login message shows in addition to the raw level.
+#            0 = "level 3"
+#            1 = "level 3 (Blackwing Lair cleared)"
+#            2 = "level 3 (Blackwing Lair cleared) - next: Ahn'Qiraj war effort"
+#        Default:     1
+#
+IndividualProgression.AnnounceStyle = 1
