@@ -1,8 +1,7 @@
 # mod-individual-progression-announce
 
-Per-player **Individual Progression** announcement at login, companion to
-[mod-individual-progression](https://github.com/Zerathane/mod-individual-progression)
-(the AzerothCore playerbots-era fork by Zerathane et al.).
+Per-player **Individual Progression** announcement at login, extension to
+[mod-individual-progression](https://github.com/Zerathane/mod-individual-progression).
 
 Instead of the static "Individual Progression: enabled" message every player
 gets, each player sees **their own progression level** at login, optionally
@@ -22,7 +21,7 @@ Individual Progression: level 3 (Blackwing Lair cleared) - next: Ahn'Qiraj war e
 2. Copy `conf/individual_progression_announce.conf.dist` to the same name
    without `.dist` in your server config directory (or let the module system
    place it and edit the copy).
-3. Re-run CMake and build (`make -j<N> && make install`). Bots and excluded
+3. Re-run CMake and build. Bots and excluded
    accounts stay silent — only normal accounts get the message.
 
 ## Configuration
