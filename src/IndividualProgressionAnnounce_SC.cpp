@@ -29,6 +29,8 @@ public:
 
         if (!sIndividualProgression->isNormalAccount(player)) // bots / excluded accounts stay quiet
             return;
+        if (!sIndividualProgression->isProgressionCharacter(player)) // Tofu Worldview: only characters that chose Progression see their tier
+            return;
 
         uint8 prog = sIndividualProgression->GetPlayerProgressionFromQuests(player);
 
@@ -68,4 +70,4 @@ public:
 void AddSC_IndividualProgressionAnnounce()
 {
     new IndividualProgressionAnnounce_Player();
-}
+}
